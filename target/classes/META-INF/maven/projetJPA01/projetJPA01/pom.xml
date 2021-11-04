@@ -1,0 +1,78 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+  <groupId>projetJPA01</groupId>
+  <artifactId>projetJPA01</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+  <build>
+    <sourceDirectory>src</sourceDirectory>
+    <plugins>
+      <plugin>
+        <artifactId>maven-compiler-plugin</artifactId>
+        <version>3.8.0</version>
+        <configuration>
+          <source>1.8</source>
+          <target>1.8</target>
+        </configuration>
+      </plugin>
+    </plugins>
+   
+  </build>
+  <dependencies>
+<!-- pour utiliser HyperSQL -->
+<!-- https://mvnrepository.com/artifact/org.hsqldb/hsqldb -->
+<dependency>
+<groupId>org.hsqldb</groupId>
+<artifactId>hsqldb</artifactId>
+<version>2.4.1</version>
+</dependency>
+	<!-- pour utiliser MySQL -->
+	<!-- https://mvnrepository.com/artifact/mysql/mysql-connector-java -->
+	<dependency>
+		<groupId>mysql</groupId>
+		<artifactId>mysql-connector-java</artifactId>
+		<version>5.1.47</version>
+	</dependency>
+	<!-- pour utiliser Hibernate -->
+	<!-- https://mvnrepository.com/artifact/org.hibernate/hibernate-core -->
+	<dependency>
+		<groupId>org.hibernate</groupId>
+		<artifactId>hibernate-core</artifactId>
+		<version>5.4.1.Final</version>
+	</dependency>
+	<dependency>
+		<groupId>org.glassfish.jaxb</groupId>
+		<artifactId>jaxb-runtime</artifactId>
+		<version>2.4.0-b180830.0438</version>
+	</dependency>
+	<!-- AJOUT SPRING -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-context</artifactId>
+			<version>5.1.0.RELEASE</version>
+		</dependency>
+		<!-- pour utiliser la partie test de Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-test</artifactId>
+			<version>5.1.0.RELEASE</version>
+		</dependency>
+		<!-- pour utiliser la partie JDBC de Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-jdbc</artifactId>
+			<version>5.1.0.RELEASE</version>
+		</dependency>
+		<!-- pour utiliser la partie ORM de Spring -->
+		<dependency>
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-orm</artifactId>
+			<version>5.1.0.RELEASE</version>
+		</dependency>
+		<!-- pour les annotations (à partir de java 10) -->
+		<dependency>
+			<groupId>javax.annotation</groupId>
+			<artifactId>javax.annotation-api</artifactId>
+			<version>1.3.2</version>
+		</dependency>
+		</dependencies>
+</project>
